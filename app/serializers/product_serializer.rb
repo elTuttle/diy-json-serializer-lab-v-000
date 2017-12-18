@@ -6,10 +6,10 @@ class ProductSerializer
 
     serialized_post += '"id": ' + product.id.to_s + ', '
     serialized_post += '"name": "' + product.name + '", '
-    serialized_post += '"price": "' + post.price + '", '
-    serialized_post += '"inventory": "' + post.inventory + '", '
+    serialized_post += '"price": ' + post.price.to_s + ', '
+    serialized_post += '"inventory": ' + post.inventory.to_s + ', '
     serialized_post += '"description": "'product.description'" '
-    
+
     serialized_post += '}'
   end
 end
