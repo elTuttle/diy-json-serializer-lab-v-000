@@ -5,7 +5,7 @@
 $(function () {
   $(".js-next").on("click", function() {
     var nextId = parseInt($(".js-next").attr("data-id")) + 1;
-    $.getJSON("/products/" + nextId + "/datdata", function(data) {
+    $.getJSON("/products/" + nextId + "/data", function(data) {
       $(".authorName").text(data["author"]["name"]);
       $(".productTitle").text(data["title"]);
       $(".productBody").text(data["description"]);
