@@ -9,6 +9,7 @@ class ProductSerializer
     serialized_post += '"price": "' + post.price + '", '
     serialized_post += '"inventory": "' + post.inventory + '", '
     serialized_post += '"description": "'product.description'" '
+    
     serialized_post += '}'
   end
 end
